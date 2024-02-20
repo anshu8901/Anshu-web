@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(data:image/jpeg;base64,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);
+			background-repeat:no-repeat;
+			background-size:1400px;
+			
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .calculator {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Age Calculator</h1>
+
+    <div class="calculator">
+        <label for="birthDate">Enter your birthdate:</label>
+        <input type="date" id="birthDate">
+
+        <button onclick="calculateAge()">Calculate Age</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calculateAge() {
+            var birthDate = new Date(document.getElementById('birthDate').value);
+            var currentDate = new Date();
+
+            var years = currentDate.getFullYear() - birthDate.getFullYear();
+            var months = currentDate.getMonth() - birthDate.getMonth();
+            var days = currentDate.getDate() - birthDate.getDate();
+
+            // Adjust negative months and days
+            if (days < 0) {
+                months--;
+                days += new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
+            }
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+
+            document.getElementById('result').innerHTML = 'Your age is: ' + years + ' years, ' + months + ' months, and ' + days + ' days.';
+        }
+    </script>
+
+</body>
+</html>

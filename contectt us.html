@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Contact us</title>
+<style>
+
+form {
+            display: grid;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+		#id1{
+	background-color:black;
+		}
+		#id2{
+		font-family:algerian;
+		 	background-color:rgb(142, 150, 230);
+            color:yellow;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+		}
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+		.colorful-bg {
+		font-size:20px;
+            background: linear-gradient(45deg, #FF5252, #FF4081, #7C4DFF, #536DFE);
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            color: #fff;
+			
+			}
+			#contact-form{
+			    height:70%;
+				width:40%;
+				
+				
+			}
+			#contact{
+			
+			     height:70%;
+				 width:70%;
+				
+			}
+			#message{
+			height:150%;
+			width:100%;
+			}
+</style>
+</head>
+<body id="id1"><center>
+<h1 id="id2">MR.ANSHU SINGH</h1>
+<section id="contact" class="colorful-bg"><center>
+        <h1>Contact Us</h1></center>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label id="message" for="message" >Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+	</body>
+	</html>
